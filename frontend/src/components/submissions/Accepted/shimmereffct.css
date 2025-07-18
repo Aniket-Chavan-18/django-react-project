@@ -1,0 +1,56 @@
+/* === SHIMMER LOADING === */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.shimmer {
+    background: linear-gradient(to right,
+            #2a2a2a 0%,
+            #3a3a3a 20%,
+            #2a2a2a 40%,
+            #2a2a2a 100%);
+    background-size: 1000px 100%;
+    animation: shimmer 0.8s infinite linear;
+    border-radius: 6px;
+}
+
+/* Skeleton layout pieces */
+.skeleton-box {
+    height: 16px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.skeleton-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.skeleton-code {
+    height: 160px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.skeleton-bar {
+    width: 30px;
+    height: 100%;
+    margin: 0 5px;
+    border-radius: 6px 6px 0 0;
+}
+
+.skeleton-y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    margin-right: 10px;
+}

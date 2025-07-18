@@ -1,0 +1,1895 @@
+[
+  {
+    "input": [
+      31,
+      null,
+      null,
+      64,
+      null,
+      null
+    ],
+    "expected_output": [
+      31,
+      64
+    ]
+  },
+  {
+    "input": [
+      100,
+      10,
+      null,
+      89,
+      null,
+      2,
+      null,
+      null,
+      53,
+      95,
+      72,
+      68,
+      41,
+      46
+    ],
+    "expected_output": [
+      100,
+      10,
+      89,
+      2,
+      53,
+      95,
+      68,
+      41,
+      72,
+      46
+    ]
+  },
+  {
+    "input": [
+      24,
+      null,
+      null,
+      43,
+      null
+    ],
+    "expected_output": [
+      24,
+      43
+    ]
+  },
+  {
+    "input": [
+      49,
+      null,
+      59,
+      null,
+      93,
+      null,
+      null,
+      null,
+      67,
+      null,
+      11
+    ],
+    "expected_output": [
+      49,
+      59,
+      93,
+      67,
+      11
+    ]
+  },
+  {
+    "input": [
+      13,
+      null,
+      null,
+      35,
+      null,
+      22,
+      56,
+      48
+    ],
+    "expected_output": [
+      13,
+      35,
+      22,
+      48,
+      56
+    ]
+  },
+  {
+    "input": [
+      80,
+      39,
+      79,
+      11,
+      null,
+      null,
+      null,
+      null,
+      42
+    ],
+    "expected_output": [
+      80,
+      39,
+      11,
+      42,
+      79
+    ]
+  },
+  {
+    "input": [
+      25,
+      98,
+      97,
+      39,
+      50
+    ],
+    "expected_output": [
+      25,
+      98,
+      39,
+      50,
+      97
+    ]
+  },
+  {
+    "input": [
+      22,
+      null,
+      66,
+      44,
+      23
+    ],
+    "expected_output": [
+      22,
+      66,
+      44,
+      23
+    ]
+  },
+  {
+    "input": [
+      71,
+      5,
+      2,
+      27,
+      null,
+      21,
+      null,
+      null,
+      null,
+      null,
+      20,
+      null,
+      52,
+      null
+    ],
+    "expected_output": [
+      71,
+      5,
+      27,
+      2,
+      21,
+      20,
+      52
+    ]
+  },
+  {
+    "input": [
+      84
+    ],
+    "expected_output": [
+      84
+    ]
+  },
+  {
+    "input": [
+      36,
+      null,
+      null,
+      51,
+      null,
+      null,
+      66,
+      87,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      36,
+      51,
+      66,
+      87
+    ]
+  },
+  {
+    "input": [
+      94,
+      null,
+      null,
+      79
+    ],
+    "expected_output": [
+      94,
+      79
+    ]
+  },
+  {
+    "input": [
+      38,
+      null,
+      55,
+      35,
+      79,
+      null,
+      null,
+      7,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      38,
+      55,
+      35,
+      79,
+      7
+    ]
+  },
+  {
+    "input": [
+      89,
+      null
+    ],
+    "expected_output": [
+      89
+    ]
+  },
+  {
+    "input": [
+      3,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      3
+    ]
+  },
+  {
+    "input": [
+      3,
+      null,
+      null,
+      null,
+      88,
+      25
+    ],
+    "expected_output": [
+      3,
+      88,
+      25
+    ]
+  },
+  {
+    "input": [
+      96,
+      null,
+      null,
+      null,
+      null,
+      49,
+      null,
+      100,
+      27,
+      25,
+      null
+    ],
+    "expected_output": [
+      96,
+      49,
+      100,
+      25,
+      27
+    ]
+  },
+  {
+    "input": [
+      62,
+      null,
+      null,
+      73,
+      52,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      84,
+      null
+    ],
+    "expected_output": [
+      62,
+      73,
+      52,
+      84
+    ]
+  },
+  {
+    "input": [
+      49,
+      97,
+      70,
+      95,
+      null,
+      49,
+      31,
+      8,
+      null
+    ],
+    "expected_output": [
+      49,
+      97,
+      95,
+      8,
+      70,
+      49,
+      31
+    ]
+  },
+  {
+    "input": [
+      71,
+      75,
+      17,
+      null,
+      100,
+      null,
+      null,
+      88,
+      null,
+      null,
+      67,
+      null,
+      null,
+      25,
+      null
+    ],
+    "expected_output": [
+      71,
+      75,
+      100,
+      88,
+      67,
+      25,
+      17
+    ]
+  },
+  {
+    "input": [
+      89,
+      null
+    ],
+    "expected_output": [
+      89
+    ]
+  },
+  {
+    "input": [
+      41,
+      null
+    ],
+    "expected_output": [
+      41
+    ]
+  },
+  {
+    "input": [
+      17,
+      68,
+      null,
+      21,
+      76,
+      75,
+      87,
+      12,
+      null,
+      72,
+      39,
+      null,
+      null,
+      57
+    ],
+    "expected_output": [
+      17,
+      68,
+      21,
+      75,
+      72,
+      39,
+      87,
+      76,
+      12,
+      57
+    ]
+  },
+  {
+    "input": [
+      80,
+      null,
+      91,
+      null,
+      null,
+      83,
+      null,
+      30,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      80,
+      91,
+      83,
+      30
+    ]
+  },
+  {
+    "input": [
+      82,
+      78,
+      null,
+      77,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      82,
+      78,
+      77
+    ]
+  },
+  {
+    "input": [
+      68,
+      9,
+      46,
+      null,
+      29,
+      75,
+      null
+    ],
+    "expected_output": [
+      68,
+      9,
+      29,
+      46,
+      75
+    ]
+  },
+  {
+    "input": [
+      59,
+      null,
+      73,
+      null,
+      17,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      59,
+      73,
+      17
+    ]
+  },
+  {
+    "input": [
+      45,
+      22,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      75,
+      null,
+      null,
+      67,
+      null,
+      45
+    ],
+    "expected_output": [
+      45,
+      22,
+      75,
+      67,
+      45
+    ]
+  },
+  {
+    "input": [
+      60,
+      null,
+      null
+    ],
+    "expected_output": [
+      60
+    ]
+  },
+  {
+    "input": [
+      71,
+      94,
+      null,
+      67,
+      43,
+      65,
+      null,
+      72,
+      3,
+      74,
+      null,
+      null,
+      55
+    ],
+    "expected_output": [
+      71,
+      94,
+      67,
+      65,
+      74,
+      43,
+      72,
+      55,
+      3
+    ]
+  },
+  {
+    "input": [
+      80,
+      80,
+      null,
+      null,
+      81,
+      14,
+      24,
+      16,
+      null,
+      22,
+      null,
+      31,
+      16,
+      null
+    ],
+    "expected_output": [
+      80,
+      80,
+      81,
+      14,
+      16,
+      31,
+      16,
+      24,
+      22
+    ]
+  },
+  {
+    "input": [
+      11,
+      null
+    ],
+    "expected_output": [
+      11
+    ]
+  },
+  {
+    "input": [
+      36,
+      63,
+      23,
+      null,
+      91,
+      18,
+      null,
+      null,
+      10,
+      99,
+      null
+    ],
+    "expected_output": [
+      36,
+      63,
+      91,
+      10,
+      23,
+      18,
+      99
+    ]
+  },
+  {
+    "input": [
+      62,
+      53,
+      11
+    ],
+    "expected_output": [
+      62,
+      53,
+      11
+    ]
+  },
+  {
+    "input": [
+      30
+    ],
+    "expected_output": [
+      30
+    ]
+  },
+  {
+    "input": [
+      82,
+      24,
+      72,
+      62,
+      16
+    ],
+    "expected_output": [
+      82,
+      24,
+      62,
+      16,
+      72
+    ]
+  },
+  {
+    "input": [
+      71,
+      56,
+      58,
+      null,
+      98,
+      null,
+      54,
+      88,
+      21,
+      74,
+      80,
+      60,
+      86
+    ],
+    "expected_output": [
+      71,
+      56,
+      98,
+      88,
+      60,
+      86,
+      21,
+      58,
+      54,
+      74,
+      80
+    ]
+  },
+  {
+    "input": [
+      30,
+      92,
+      27,
+      null
+    ],
+    "expected_output": [
+      30,
+      92,
+      27
+    ]
+  },
+  {
+    "input": [
+      34,
+      null,
+      40,
+      15,
+      97,
+      null,
+      63,
+      null,
+      null,
+      29
+    ],
+    "expected_output": [
+      34,
+      40,
+      15,
+      63,
+      29,
+      97
+    ]
+  },
+  {
+    "input": [
+      76,
+      21,
+      null,
+      null,
+      null,
+      45,
+      18,
+      30,
+      null
+    ],
+    "expected_output": [
+      76,
+      21,
+      45,
+      30,
+      18
+    ]
+  },
+  {
+    "input": [
+      41,
+      53
+    ],
+    "expected_output": [
+      41,
+      53
+    ]
+  },
+  {
+    "input": [
+      27,
+      null,
+      null,
+      58,
+      null,
+      null,
+      null,
+      null,
+      null,
+      61,
+      null
+    ],
+    "expected_output": [
+      27,
+      58,
+      61
+    ]
+  },
+  {
+    "input": [
+      47
+    ],
+    "expected_output": [
+      47
+    ]
+  },
+  {
+    "input": [
+      64,
+      30,
+      43,
+      98,
+      13,
+      23,
+      null,
+      19,
+      64,
+      null,
+      27,
+      null
+    ],
+    "expected_output": [
+      64,
+      30,
+      98,
+      19,
+      64,
+      13,
+      27,
+      43,
+      23
+    ]
+  },
+  {
+    "input": [
+      84
+    ],
+    "expected_output": [
+      84
+    ]
+  },
+  {
+    "input": [
+      86,
+      null,
+      77,
+      28
+    ],
+    "expected_output": [
+      86,
+      77,
+      28
+    ]
+  },
+  {
+    "input": [
+      33,
+      null,
+      null,
+      48,
+      62,
+      34,
+      43,
+      null,
+      null,
+      79,
+      64
+    ],
+    "expected_output": [
+      33,
+      48,
+      34,
+      79,
+      64,
+      43,
+      62
+    ]
+  },
+  {
+    "input": [
+      61
+    ],
+    "expected_output": [
+      61
+    ]
+  },
+  {
+    "input": [
+      43,
+      9,
+      null,
+      null,
+      10,
+      70,
+      30,
+      52,
+      100,
+      33,
+      94
+    ],
+    "expected_output": [
+      43,
+      9,
+      10,
+      70,
+      52,
+      100,
+      30,
+      33,
+      94
+    ]
+  },
+  {
+    "input": [
+      18,
+      49,
+      22,
+      24,
+      34,
+      null,
+      21,
+      null,
+      92,
+      99,
+      19,
+      61,
+      10,
+      null
+    ],
+    "expected_output": [
+      18,
+      49,
+      24,
+      92,
+      34,
+      99,
+      19,
+      22,
+      21,
+      61,
+      10
+    ]
+  },
+  {
+    "input": [
+      7,
+      null,
+      50,
+      null,
+      null,
+      null,
+      88,
+      null,
+      37,
+      null,
+      null,
+      58,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      7,
+      50,
+      88,
+      37,
+      58
+    ]
+  },
+  {
+    "input": [
+      38,
+      37,
+      null,
+      null,
+      99
+    ],
+    "expected_output": [
+      38,
+      37,
+      99
+    ]
+  },
+  {
+    "input": [
+      0,
+      79,
+      69,
+      null,
+      57,
+      null,
+      72,
+      null,
+      3
+    ],
+    "expected_output": [
+      0,
+      79,
+      57,
+      3,
+      69,
+      72
+    ]
+  },
+  {
+    "input": [
+      2,
+      null,
+      41
+    ],
+    "expected_output": [
+      2,
+      41
+    ]
+  },
+  {
+    "input": [
+      20,
+      null,
+      90,
+      null,
+      68,
+      58,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      20,
+      90,
+      68,
+      58
+    ]
+  },
+  {
+    "input": [
+      87,
+      21,
+      null,
+      16,
+      72,
+      null,
+      null,
+      85,
+      null,
+      2,
+      90
+    ],
+    "expected_output": [
+      87,
+      21,
+      16,
+      72,
+      85,
+      2,
+      90
+    ]
+  },
+  {
+    "input": [
+      93,
+      17,
+      52,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      93,
+      17,
+      52
+    ]
+  },
+  {
+    "input": [
+      74,
+      null,
+      null,
+      14,
+      38,
+      95,
+      75,
+      10,
+      50,
+      null,
+      75
+    ],
+    "expected_output": [
+      74,
+      14,
+      95,
+      75,
+      75,
+      38,
+      10,
+      50
+    ]
+  },
+  {
+    "input": [
+      51,
+      54,
+      1,
+      null,
+      null,
+      null,
+      0,
+      6
+    ],
+    "expected_output": [
+      51,
+      54,
+      1,
+      0,
+      6
+    ]
+  },
+  {
+    "input": [
+      0,
+      null,
+      5,
+      67,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      0,
+      5,
+      67
+    ]
+  },
+  {
+    "input": [
+      22
+    ],
+    "expected_output": [
+      22
+    ]
+  },
+  {
+    "input": [
+      25,
+      null,
+      76,
+      null,
+      80,
+      72,
+      38,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      25,
+      76,
+      80,
+      72,
+      38
+    ]
+  },
+  {
+    "input": [
+      88,
+      null,
+      61,
+      null,
+      null,
+      null,
+      72,
+      83,
+      null,
+      null,
+      null,
+      95,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      88,
+      61,
+      72,
+      83,
+      95
+    ]
+  },
+  {
+    "input": [
+      54,
+      47,
+      86,
+      92,
+      null,
+      null,
+      98,
+      null,
+      15,
+      null,
+      null,
+      85,
+      70,
+      null,
+      36
+    ],
+    "expected_output": [
+      54,
+      47,
+      92,
+      15,
+      85,
+      36,
+      70,
+      86,
+      98
+    ]
+  },
+  {
+    "input": [
+      57,
+      null
+    ],
+    "expected_output": [
+      57
+    ]
+  },
+  {
+    "input": [
+      46,
+      null,
+      null,
+      null,
+      0,
+      null
+    ],
+    "expected_output": [
+      46,
+      0
+    ]
+  },
+  {
+    "input": [
+      57,
+      null,
+      null,
+      null,
+      48,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      57,
+      48
+    ]
+  },
+  {
+    "input": [
+      51,
+      36,
+      null,
+      null,
+      33
+    ],
+    "expected_output": [
+      51,
+      36,
+      33
+    ]
+  },
+  {
+    "input": [
+      60,
+      null,
+      null,
+      75,
+      null,
+      null,
+      53,
+      51,
+      82,
+      null,
+      null,
+      68,
+      72,
+      null,
+      null
+    ],
+    "expected_output": [
+      60,
+      75,
+      53,
+      51,
+      82,
+      68,
+      72
+    ]
+  },
+  {
+    "input": [
+      63,
+      98,
+      64,
+      null,
+      39,
+      null,
+      null,
+      36,
+      33
+    ],
+    "expected_output": [
+      63,
+      98,
+      39,
+      36,
+      33,
+      64
+    ]
+  },
+  {
+    "input": [
+      66,
+      null,
+      null,
+      null,
+      64,
+      null,
+      null,
+      null,
+      44,
+      67,
+      36,
+      null
+    ],
+    "expected_output": [
+      66,
+      64,
+      44,
+      67,
+      36
+    ]
+  },
+  {
+    "input": [
+      32
+    ],
+    "expected_output": [
+      32
+    ]
+  },
+  {
+    "input": [
+      60,
+      null,
+      null,
+      97,
+      null,
+      null,
+      32,
+      5
+    ],
+    "expected_output": [
+      60,
+      97,
+      32,
+      5
+    ]
+  },
+  {
+    "input": [
+      69,
+      97,
+      45,
+      null
+    ],
+    "expected_output": [
+      69,
+      97,
+      45
+    ]
+  },
+  {
+    "input": [
+      54,
+      null,
+      51,
+      84,
+      13,
+      null,
+      21,
+      null,
+      80,
+      null,
+      null,
+      null,
+      52
+    ],
+    "expected_output": [
+      54,
+      51,
+      84,
+      21,
+      13,
+      80,
+      52
+    ]
+  },
+  {
+    "input": [
+      24,
+      null,
+      55,
+      74,
+      null,
+      null,
+      null,
+      null,
+      null,
+      29,
+      null,
+      11,
+      null,
+      44,
+      null
+    ],
+    "expected_output": [
+      24,
+      55,
+      74,
+      29,
+      11,
+      44
+    ]
+  },
+  {
+    "input": [
+      14,
+      null,
+      19,
+      15,
+      82,
+      28,
+      40,
+      93,
+      27,
+      92,
+      null,
+      3,
+      86,
+      null,
+      null
+    ],
+    "expected_output": [
+      14,
+      19,
+      15,
+      28,
+      92,
+      40,
+      3,
+      86,
+      82,
+      93,
+      27
+    ]
+  },
+  {
+    "input": [
+      13,
+      96,
+      68,
+      64,
+      null,
+      90,
+      null,
+      null,
+      36,
+      null,
+      66,
+      null
+    ],
+    "expected_output": [
+      13,
+      96,
+      64,
+      36,
+      68,
+      90,
+      66
+    ]
+  },
+  {
+    "input": [
+      69,
+      null,
+      null,
+      0,
+      87,
+      76,
+      null,
+      null,
+      82,
+      null,
+      49,
+      null
+    ],
+    "expected_output": [
+      69,
+      0,
+      76,
+      49,
+      87,
+      82
+    ]
+  },
+  {
+    "input": [
+      51,
+      null,
+      null,
+      74,
+      90
+    ],
+    "expected_output": [
+      51,
+      74,
+      90
+    ]
+  },
+  {
+    "input": [
+      56,
+      48,
+      null,
+      49,
+      null,
+      null,
+      null,
+      null,
+      95,
+      null,
+      null,
+      33,
+      13,
+      30,
+      null
+    ],
+    "expected_output": [
+      56,
+      48,
+      49,
+      95,
+      33,
+      30,
+      13
+    ]
+  },
+  {
+    "input": [
+      61,
+      null,
+      57,
+      null,
+      100,
+      28,
+      99,
+      null,
+      100,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      61,
+      57,
+      100,
+      28,
+      100,
+      99
+    ]
+  },
+  {
+    "input": [
+      56,
+      78,
+      75
+    ],
+    "expected_output": [
+      56,
+      78,
+      75
+    ]
+  },
+  {
+    "input": [
+      95,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      65,
+      18,
+      null,
+      null
+    ],
+    "expected_output": [
+      95,
+      65,
+      18
+    ]
+  },
+  {
+    "input": [
+      89,
+      null,
+      null,
+      34
+    ],
+    "expected_output": [
+      89,
+      34
+    ]
+  },
+  {
+    "input": [
+      76,
+      null,
+      79,
+      28,
+      18
+    ],
+    "expected_output": [
+      76,
+      79,
+      28,
+      18
+    ]
+  },
+  {
+    "input": [
+      63,
+      null,
+      null,
+      null,
+      5
+    ],
+    "expected_output": [
+      63,
+      5
+    ]
+  },
+  {
+    "input": [
+      24,
+      60,
+      68,
+      68,
+      null,
+      51,
+      null,
+      null,
+      null,
+      58,
+      43
+    ],
+    "expected_output": [
+      24,
+      60,
+      68,
+      68,
+      51,
+      58,
+      43
+    ]
+  },
+  {
+    "input": [
+      48,
+      1,
+      null,
+      35,
+      77,
+      46,
+      null,
+      null,
+      69,
+      null,
+      null,
+      23,
+      null,
+      60,
+      78
+    ],
+    "expected_output": [
+      48,
+      1,
+      35,
+      46,
+      77,
+      69,
+      23,
+      60,
+      78
+    ]
+  },
+  {
+    "input": [
+      87,
+      32,
+      null,
+      87,
+      null,
+      null,
+      20,
+      47
+    ],
+    "expected_output": [
+      87,
+      32,
+      87,
+      20,
+      47
+    ]
+  },
+  {
+    "input": [
+      44,
+      null,
+      null,
+      47,
+      72,
+      null,
+      null,
+      92
+    ],
+    "expected_output": [
+      44,
+      47,
+      72,
+      92
+    ]
+  },
+  {
+    "input": [
+      4,
+      null,
+      null,
+      7,
+      47,
+      null,
+      null
+    ],
+    "expected_output": [
+      4,
+      7,
+      47
+    ]
+  },
+  {
+    "input": [
+      5,
+      21,
+      45,
+      86,
+      98,
+      46,
+      2,
+      null,
+      81,
+      null,
+      null,
+      null,
+      null,
+      0
+    ],
+    "expected_output": [
+      5,
+      21,
+      86,
+      81,
+      98,
+      45,
+      46,
+      2,
+      0
+    ]
+  },
+  {
+    "input": [
+      21,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      21
+    ]
+  },
+  {
+    "input": [
+      65,
+      null,
+      94,
+      27,
+      17,
+      null,
+      95,
+      null,
+      55,
+      74
+    ],
+    "expected_output": [
+      65,
+      94,
+      27,
+      95,
+      74,
+      17,
+      55
+    ]
+  },
+  {
+    "input": [
+      28,
+      null,
+      null,
+      68,
+      null,
+      18,
+      39,
+      76,
+      null,
+      4,
+      32,
+      null
+    ],
+    "expected_output": [
+      28,
+      68,
+      18,
+      76,
+      39,
+      4,
+      32
+    ]
+  },
+  {
+    "input": [
+      100,
+      null,
+      null,
+      97,
+      null,
+      null,
+      null
+    ],
+    "expected_output": [
+      100,
+      97
+    ]
+  },
+  {
+    "input": [
+      78,
+      91,
+      28,
+      9,
+      66,
+      41,
+      null
+    ],
+    "expected_output": [
+      78,
+      91,
+      9,
+      66,
+      28,
+      41
+    ]
+  },
+  {
+    "input": [
+      62,
+      14,
+      19,
+      null,
+      null,
+      null,
+      60,
+      71
+    ],
+    "expected_output": [
+      62,
+      14,
+      19,
+      60,
+      71
+    ]
+  },
+  {
+    "input": [
+      27,
+      null,
+      5,
+      null,
+      null,
+      null,
+      31,
+      null,
+      null
+    ],
+    "expected_output": [
+      27,
+      5,
+      31
+    ]
+  }
+]

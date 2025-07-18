@@ -1,0 +1,336 @@
+/* ProblemPage.css */
+:root {
+  --bg-color: #1e1e1e;
+  --text-color: #d4d4d4;
+  --border-color: #3c3c3c;
+  --primary-color: #007acc;
+  --secondary-color: #4ec9b0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: black;
+  color: var(--text-color);
+  overflow: hidden;
+  position: relative;
+  /* allow absolute resizer */
+}
+
+/* Left panel */
+.left-panel {
+  overflow-y: auto;
+  padding: 0px 15px;
+  min-width: 20%;
+  max-width: 100%;
+  background: var(--bg-color);
+  transition: width 0.2s ease;
+  box-sizing: border-box;
+  height: 100%;
+  /* Remove border to avoid extra spacing */
+  border: 2px solid var(--bg-color);
+
+}
+
+/* Resizer (not in flex flow!) */
+.resizer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  left: 0;
+  /* will be set inline */
+  background: transparent;
+  cursor: col-resize;
+  z-index: 10;
+  transition: background 0.2s ease;
+}
+
+
+
+/* Extra hover color */
+.resizer:hover {
+  background: #1de9b6 !important;
+}
+
+.right-panel {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 30%;
+  max-width: 100%;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+/* The rest of your CSS stays unchanged */
+
+
+.editor-header {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  background: var(--border-color);
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.font-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.font-controls button {
+  background: #333;
+  color: var(--text-color);
+  border: none;
+  padding: 2px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.fullscreen-btn {
+  margin-left: auto;
+  padding: 6px;
+  border-radius: 4px;
+  background: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.fullscreen-btn:hover {
+  background: #555;
+}
+
+/* Fullscreen mode */
+.fullscreen-editor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-color);
+}
+
+.fullscreen-editor .left-panel,
+.fullscreen-editor .resizer {
+  display: none;
+}
+
+.fullscreen-editor .right-panel {
+  width: 100% !important;
+}
+
+/* Output area only visible when not fullscreen */
+.output-section {
+  height: 30vh;
+  border-top: 1px solid var(--border-color);
+  padding: 15px;
+  background: #1a1a1a;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+/* Tab styles */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  white-space: nowrap;
+}
+
+.tabs button:hover {
+  color: var(--primary-color);
+}
+
+.tabs button.active {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* Vertical tabs for narrow panel */
+.left-panel.narrow .tabs {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+
+.left-panel.narrow .tabs button {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  padding: 15px 5px;
+  margin: 10px 0;
+  width: 30px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* Problem content */
+.problem-content {
+  line-height: 1.6;
+  overflow-x: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.problem-content h1 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.sample-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: #2a2a2a;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.sample-section pre {
+  padding: 10px;
+  background: #333;
+  border-radius: 3px;
+  margin: 10px 0;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.expandable-section {
+  margin: 15px 0;
+  width: 100%;
+}
+
+.section-header {
+  width: 100%;
+  padding: 12px;
+  text-align: left;
+  background: #2a2a2a;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.section-header:hover {
+  background: #333;
+}
+
+.section-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section-content.open {
+  max-height: 200px;
+  transition: max-height 0.3s ease-in;
+  padding: 15px;
+}
+
+/* Other styles */
+.company-tag {
+  display: inline-block;
+  background: var(--primary-color);
+  padding: 4px 8px;
+  border-radius: 3px;
+  margin: 5px;
+  font-size: 0.9em;
+}
+
+.editor-header select {
+  background: #333;
+  color: var(--text-color);
+  border: 1px solid #444;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.action-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.action-buttons button:hover {
+  opacity: 0.9;
+}
+
+.run-btn {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.submit-btn {
+  background: var(--primary-color);
+  color: white;
+}
+
+.testcase-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.testcase-buttons button {
+  background: #333;
+  border: none;
+  color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.testcase-buttons button:hover {
+  background: #444;
+}
+
+.output-content {
+  background: #000;
+  padding: 10px;
+  border-radius: 4px;
+  height: calc(100% - 40px);
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.activeBtn {
+  background-color: var(--primary-color);
+  color: white;
+}

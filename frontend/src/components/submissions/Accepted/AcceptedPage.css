@@ -1,0 +1,305 @@
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --primary-color: #2ecc71;
+    --secondary-color: #3498db;
+    --danger-color: #e74c3c;
+    --border-color: #333333;
+    --card-bg: #222222;
+    --highlight-bg: #2c2c2c;
+    --tooltip-bg: #444444;
+    --tooltip-text: #f1f1f1;
+    --code-color: #c5c8c6;
+    --code-keyword: #f92672;
+    --code-type: #66d9ef;
+    --code-func: #a6e22e;
+    --code-comment: #75715e;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.accepted-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.header-top {
+    margin-bottom: 30px;
+}
+
+.status-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.testcase-info {
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin-bottom: 12px;
+}
+
+.row-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #aaaaaa;
+    border-top: 1px solid var(--border-color);
+    padding-top: 10px;
+}
+
+.stats-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stats-buttons button {
+    flex: 1;
+    background-color: var(--highlight-bg);
+    color: var(--text-color);
+    padding: 12px;
+    margin: 0 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.stats-buttons button.active {
+    background-color: var(--primary-color);
+    color: #000;
+    font-weight: bold;
+}
+
+.stats-buttons button:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.graph-container {
+    position: relative;
+    margin: 40px 0 40px 0;
+    padding-left: 40px;
+}
+
+.graph {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+    gap: 10px;
+    position: relative;
+}
+
+.bar {
+    width: 100%;
+    background: linear-gradient(to top, var(--secondary-color), var(--primary-color));
+    border-radius: 6px 6px 0 0;
+    transition: height 0.4s ease;
+    transform-origin: bottom;
+    /* REMOVE scaleY animation */
+    animation: rise 0.8s ease-out forwards;
+}
+
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 30px;
+    position: relative;
+}
+
+.bar:hover {
+    transform: scaleY(1.05);
+    background: linear-gradient(to top, #00e676, #00bfa5);
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--tooltip-bg);
+    color: var(--tooltip-text);
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.bar:hover .tooltip {
+    display: block;
+}
+
+.y-axis-labels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888;
+}
+
+.x-label {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.x-axis-labels {
+    position: absolute;
+    bottom: -24px;
+    left: 40px;
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    color: #888;
+}
+
+.code-section {
+    background-color: var(--highlight-bg);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.code-section h2 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.code-buttons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.code-section:hover .code-buttons {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.code-buttons button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.code-buttons button:hover {
+    background-color: var(--primary-color);
+    color: #000;
+}
+
+pre {
+    background-color: #111;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    color: var(--code-color);
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre::selection {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+/* Optional: simple highlighting using spans (can be enhanced later with Prism or Shiki) */
+pre .keyword {
+    color: var(--code-keyword);
+}
+
+pre .type {
+    color: var(--code-type);
+}
+
+pre .function {
+    color: var(--code-func);
+}
+
+pre .comment {
+    color: var(--code-comment);
+    font-style: italic;
+}
+
+.notes {
+    background-color: var(--highlight-bg);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.notes h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.notes textarea {
+    width: 100%;
+    background-color: #1c1c1c;
+    color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 10px;
+    resize: vertical;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.notes button {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.notes button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+@keyframes rise {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}

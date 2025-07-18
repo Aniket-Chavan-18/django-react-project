@@ -1,0 +1,79 @@
+/* SubmissionsPage.css */
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --primary-color: #2ecc71;
+    --secondary-color: #3498db;
+    --danger-color: #e74c3c;
+    --border-color: #333333;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+.submissions-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+select {
+    padding: 0.3rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.submissions-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+}
+
+.submissions-table th,
+.submissions-table td {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.submissions-table th {
+    background-color: var(--border-color);
+}
+
+.status.accepted {
+    color: var(--primary-color);
+}
+
+.status.wrong-answer {
+    color: var(--danger-color);
+}
+
+.status.compilation-error {
+    color: orange;
+}
+
+.status.runtime-error {
+    color: red;
+}
+
+.no-data {
+    text-align: center;
+    padding: 2rem;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    border: 1px dashed var(--border-color);
+    border-radius: 8px;
+    background-color: #222222;
+    margin-top: 2rem;
+}

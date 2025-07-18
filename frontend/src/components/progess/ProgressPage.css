@@ -1,0 +1,158 @@
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --primary-color: #2ecc71;
+    --secondary-color: #3498db;
+    --danger-color: #e74c3c;
+    --border-color: #333333;
+}
+
+.progress-page {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.left-section h2,
+.right-section h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-table th,
+.history-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.status.accepted {
+    color: var(--primary-color);
+}
+
+.status.wrong {
+    color: var(--danger-color);
+}
+
+.no-data {
+    text-align: center;
+    padding: 1rem;
+    color: #aaa;
+    font-style: italic;
+    animation: fadeIn 0.5s ease;
+}
+
+.summary p {
+    margin: 0.5rem 0;
+}
+
+.difficulty-counts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.graph-section {
+    margin-top: 2rem;
+}
+
+.graph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.btn-group button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    background: none;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+}
+
+.btn-group button.active,
+.btn-group button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.dropdowns select {
+    margin-left: 0.5rem;
+    padding: 0.4rem;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 4px;
+}
+
+.bar-graph {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    height: 200px;
+    transition: all 0.3s ease;
+}
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar {
+    width: 30px;
+    background-color: var(--primary-color);
+    transition: height 0.3s ease;
+    border-radius: 6px 6px 0 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

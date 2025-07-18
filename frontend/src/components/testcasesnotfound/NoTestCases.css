@@ -1,0 +1,49 @@
+.no-testcases-container {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px dashed var(--border-color);
+    border-radius: 12px;
+    margin-top: 2rem;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.no-testcases-image {
+    width: 250px;
+    max-width: 90%;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    opacity: 0.9;
+}
+
+.no-testcases-title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.no-testcases-message {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.no-testcases-subtext {
+    font-size: 0.95rem;
+    color: #aaa;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
